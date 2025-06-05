@@ -33,12 +33,9 @@ def upload_image(name):
     image_path = list(uploaded.keys())[0]
     image = load_img(image_path)
     return image
-
-# Upload content and style images
 content_image = upload_image("Content")
 style_image = upload_image("Style")
 
-# Show uploaded images
 plt.subplot(1, 2, 1)
 imshow(content_image, 'Content Image')
 
